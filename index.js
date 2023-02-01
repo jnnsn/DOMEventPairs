@@ -6,3 +6,5 @@ cookieImage.addEventListener("click", function(){
     cookieCounter++
     cookieText.innerHTML = `You clicked this ${cookieCounter} times!`
 })
+// // End of Exercise 1: Cookie Counter // //
+// // Exercise 2: Magnifying Glass // //
