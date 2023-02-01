@@ -4,7 +4,12 @@ let cookieText = document.getElementById("cookieText")
 let cookieImage = document.getElementById("cookieImage")
 cookieImage.addEventListener("click", function () {
     cookieCounter++
+    if (cookieCounter == 1){
+    cookieText.innerHTML = `You clicked this ${cookieCounter} time!`
+    }
+    else {
     cookieText.innerHTML = `You clicked this ${cookieCounter} times!`
+    }
 })
 // // End of Exercise 1: Cookie Counter // //
 // // Exercise 2: Magnifying Glass // //
@@ -22,20 +27,15 @@ smallButton.addEventListener("click", function () {
 bigButton.addEventListener("click", function () {
     magText.style.fontSize = "x-large"
 })
-
+// // End of Exercise 2: Magnifying Glass // //
 // // Exercise 3: Green Screen // //
-
-
 function changeColor() {
     let color = document.getElementById("colorInput").value;
     document.body.style.backgroundColor = color;
 }
-
 // colorButton.addEventListener("click", changeColor());
 
-
-
-
+// 1st Way of doing Exercise 3 but did not work //
 // let webPage = document.querySelector("html")
 // let colorText = document.getElementById("colorInput")
 
@@ -59,6 +59,5 @@ function changeColor() {
 //         webPage.style.backgroundColor = "white"
 //     }
 // })
-
-
 // // End of Exercise 3: Green Screen // //
+// // Exercise 4: Magnifying Glass // //
