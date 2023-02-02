@@ -84,9 +84,6 @@ let rightBtn = document.getElementById("rightButton")
 upBtn.addEventListener("click", function(){
     crane.style.top = (crane.offsetTop - 10)+ "px";
 })
-upBtn.addEventListener("click", function(){
-    crane.style.top = (crane.offsetTop - 10)+ "px";
-})
 downBtn.addEventListener("click", function(){
     crane.style.top = (crane.offsetTop + 10)+ "px";
 })
