@@ -24,7 +24,7 @@ let smallButton = document.getElementById("smallBtn")
 let bigButton = document.getElementById("bigBtn")
 let magText = document.getElementById("magnifyingText")
 
-magText.style.fontsize = "12px"
+magText.style.fontSize = "15px"
 
 smallButton.addEventListener("click", function () {
     magText.style.fontSize = "small";
