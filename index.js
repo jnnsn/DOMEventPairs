@@ -29,11 +29,19 @@ bigButton.addEventListener("click", function () {
 })
 // // End of Exercise 2: Magnifying Glass // //
 // // Exercise 3: Green Screen // //
-function changeColor() {
-    let color = document.getElementById("colorInput").value;
+//1st WAY using JS only
+let colorBtn = document.getElementById("colorButton")
+let colorInput = document.getElementById("colorInput")
+
+colorBtn.addEventListener("click", function(){
+    let color = colorInput.value;
     document.body.style.backgroundColor = color;
-}
-// colorButton.addEventListener("click", changeColor());
+})
+//2nd WAY: This way works with the INLINE onclick on button! must comment out second way and comment in first way//
+// function changeColor() {
+//     let color = document.getElementById("colorInput").value;
+//     document.body.style.backgroundColor = color;
+// }
 
 // 1st Way of doing Exercise 3 but did not work //
 // let webPage = document.querySelector("html")
@@ -60,4 +68,31 @@ function changeColor() {
 //     }
 // })
 // // End of Exercise 3: Green Screen // //
-// // Exercise 4: Magnifying Glass // //
+// // Exercise 4: Crane Game // //
+let crane = document.getElementById("craneImage")
+let upBtn = document.getElementById("upButton")
+let downBtn = document.getElementById("downButton")
+let leftBtn = document.getElementById("leftButton")
+let rightBtn = document.getElementById("rightButton")
+
+upBtn.addEventListener("click", function(){
+    crane.style.top = (crane.offsetTop - 10)+ "px"
+})
+upBtn.addEventListener("click", function(){
+    crane.style.top = (crane.offsetTop - 10)+ "px"
+})
+downBtn.addEventListener("click", function(){
+    crane.style.top = (crane.offsetTop + 10)+ "px"
+})
+leftBtn.addEventListener("click", function(){
+    crane.style.left = (crane.offsetLeft - 10)+ "px"
+})
+rightBtn.addEventListener("click", function(){
+    crane.style.left = (crane.offsetLeft + 10)+ "px"
+})
+// // End of Exercise 4: Crane Game // //
+
+// // Exercise 5: Dice // //
+// // End of Exercise 5: Dice // //
+
+
